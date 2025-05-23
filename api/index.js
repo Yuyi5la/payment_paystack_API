@@ -1,6 +1,8 @@
 const express = require('express');
 const serverless = require('serverless-http');
-const paymentsRoutes = require('./Routes/paymentRoutes'); 
+
+const paymentRoutes = require('./routes/paymentRoutes');
+
 require('dotenv').config();
 
 const app = express();
