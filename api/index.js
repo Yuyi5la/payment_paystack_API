@@ -1,11 +1,11 @@
 const express = require('express');
 const serverless = require('serverless-http');
-const paymentsRoutes = require('./Routes/paymentsRoutes'); 
+const paymentsRoutes = require('./Routes/paymentRoutes'); 
 require('dotenv').config();
 
 const app = express();
 
 app.use(express.json());
-app.use('/api/v1/payments', paymentsRoutes);
+app.use('/api/v1/payments', paymentRoutes);
 
 module.exports.handler = serverless(app);
